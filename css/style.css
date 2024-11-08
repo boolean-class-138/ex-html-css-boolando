@@ -1,0 +1,160 @@
+/*------------------
+    RESET
+------------------*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*------------------
+    TYPO
+------------------*/
+body {
+    font-family: 'Roboto', sans-serif;
+}
+h4 {
+    margin-bottom: 10px;
+}
+
+/*------------------
+    COMMONS
+------------------*/
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+.row {
+    display: flex;
+}
+.col {
+    flex-grow: 1;
+}
+.list-inline {
+    display: flex;
+    list-style: none;
+    gap: 10px
+}
+
+header a, footer a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.tag {
+    display: inline-block;
+    padding: 5px;
+    color: #fff;
+}
+.tag-discount {
+    background-color: red;
+}
+.tag-eco-friendly {
+    background-color: green;
+}
+
+/*------------------
+    HEADER
+------------------*/
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: #ff6900;
+    height: 60px;
+    color: #fff;
+}
+header .row {
+    height: 100%;
+    align-items: center;
+    padding: 0 10px;
+}
+.main-nav, .icons {
+    width: 20%;
+}
+.logo {
+    width: 60%;
+    text-align: center;
+}
+.logo img {
+    max-height: 30px;
+}
+.icons .list-inline {
+    justify-content: flex-end;
+}
+
+/*------------------
+    MAIN
+------------------*/
+main {
+    padding: 40px 0;
+}
+.products {
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.products .col {
+    width: calc(100% / 3);
+}
+.product-image {
+    position: relative;
+}
+.product-image img {
+    width: 100%;
+    display: block;
+}
+.product-image:hover .img-hover {
+    display: block;
+}
+.product-image:hover .img-default {
+    display: none;
+}
+
+.product-image .img-hover {
+    display: none;
+}
+
+.product-image  .heart {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    height: 50px;
+    width: 50px;
+    background-color: #fff;
+    font-size: 24px;
+    text-align: center;
+    line-height: 50px;
+}
+.product:hover .heart i {
+    color: red;
+}
+.product-image .tags {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+}
+.price-discount {
+    color: red;
+    font-weight: bold;
+}
+.price-original {
+    text-decoration: line-through;
+}
+
+/*------------------
+    FOOTER
+------------------*/
+footer {
+    background-color: #1a1a1a;
+    padding: 25px 0;
+    color: #fff;
+}
+
+footer .row {
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.follow-us {
+    text-align: right;
+}
